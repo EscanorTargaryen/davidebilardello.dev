@@ -25,9 +25,9 @@ export class AppComponent {
 
         let ball = gsap.timeline()
 
-        //gira quando scrolli
+        //rotate ball during scroll
         ball.to(canva.canva.scene.rotation, {
-          y: 1,
+          y: 2,
           scrollTrigger: {
             start: "top top",
             end: "bottom bottom",
@@ -35,11 +35,11 @@ export class AppComponent {
           }
         })
 
-        //si mette sulla sinistra quando arrivi ai progetti
+        //move to the left during when the projects title is in view
         ball.to(canva.canva.scene.position, {
           x: -1,
           scrollTrigger: {
-            trigger: ".section-one",
+            trigger: ".projects-title",
             scrub: 0.5,
             end: "+=200"
           }

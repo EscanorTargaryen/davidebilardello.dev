@@ -12,20 +12,36 @@
                   [typeText]="TextType.h2">I’m a junior software engineer and front-end developer
   </app-typography>
 </div>
-<div class="flex flex-col items-end p-20 " [style.margin-top]="(window.innerHeight*0.6) + 'px'">
-  <div>
-    <app-typography cssClasses="text-primary " [fontText]="TextFont.QuicksandBold"
-                    [typeText]="TextType.h2"> Projects
+<div class="mt-[250px]  flex justify-evenly items-center">
+  <div class="group transition duration-300 cursor-pointer">
+    <app-typography (click)="scrollToElement('projects-title')" cssClasses="text-white" [fontText]="TextFont.QuicksandRegular"
+                    [typeText]="TextType.h3">My Projects
     </app-typography>
-    <app-typography cssClasses="text-primary" [fontText]="TextFont.QuicksandRegular"
-                    [typeText]="TextType.h4"> UltimateAdvancementgenerator
+    <span class="block mt-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 h-[2px] bg-white"></span>
+  </div>
+  <div class="group transition duration-300 cursor-pointer">
+    <app-typography cssClasses="text-white" [fontText]="TextFont.QuicksandRegular"
+                    [typeText]="TextType.h3">About me
     </app-typography>
-    <app-typography cssClasses="text-primary  section-one" [fontText]="TextFont.QuicksandRegular"
-                    [typeText]="TextType.h4"> UltimateAdvancementgenerator is a generator<br>UltimateAdvancementgenerator
-      is a generator<br>UltimateAdvancementgenerator is a generator<br>UltimateAdvancementgenerator is a generator<br>UltimateAdvancementgenerator
-      is a generator<br>UltimateAdvancementgenerator is a generator<br>UltimateAdvancementgenerator is a generator<br>UltimateAdvancementgenerator
-      is a generator<br>UltimateAdvancementgenerator is a generator<br>
+    <span class="block mt-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 h-[2px] bg-white"></span>
+  </div>
+</div>
+<div class="flex flex-col items-end p-5 mt-80">
+  <div class="w-[50%]">
+    <app-typography cssClasses="text-secondary text-center mb-10 projects-title" [fontText]="TextFont.QuicksandBold"
+                    [typeText]="TextType.h2" id="projects-title">My Projects
     </app-typography>
+    @defer {
+      <app-project title="UltimateAdvancementGenerator"
+                   description="UltimateAdvancementGenerator makes it possible to
+      graphically design minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Use this
+      tool to create your own custom advancements!"
+                   [tags]="['Angular', 'Express.js']"
+                   img="imgs/generator.png" [imgW]="1916"
+                   [imgH]="1079"
+                   website="https://generator.devheim.space/"
+      ></app-project>
+    }
   </div>
 </div>
 <div class="flex flex-col items-end  mt-96 p-20">

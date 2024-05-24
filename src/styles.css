@@ -57,3 +57,8 @@ canvas {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #666FBF;
 }
+
+* {
+  scroll-margin: 60px;
+  outline-color: white;
+}

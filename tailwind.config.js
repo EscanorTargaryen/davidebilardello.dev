@@ -11,6 +11,7 @@ module.exports = {
         "secondary": "#00C2AB",
         "secondaryDark": "#003E36",
         "third": "#FFA800",
+        "thirdDark": "rgba(255,168,0,0.5)",
 
       },
       fontFamily: {

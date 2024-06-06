@@ -170,9 +170,13 @@ export class Scenes {
   }
 `;
 
-  color = 1.55
+  rgb = [0.1,0.2,0.3]
+
 
   getFragmentShader() {
+
+   let hue = 1.55
+
     return `
  varying vec2 vUv;
 varying float vDistort;
@@ -188,13 +192,13 @@ vec3 cosPalette(float t, vec3 a, vec3 b, vec3 c, vec3 d) {
 void main() {
   float distort = vDistort * 0.4;
 
-  vec3 brightness = vec3(0.2, 0.2, 0.2);
+  //rgb
+  vec3 brightness = vec3(${this.rgb[0]}, ${this.rgb[1]}, ${this.rgb[2]});
   vec3 contrast = vec3(0.5, 0.5, 0.5);
   vec3 oscilation = vec3(1.0, 1.0, 1.0);
   vec3 phase = vec3(0.0, 0.1, 0.2);
 
-  //il primo valore è il colore
-  vec3 color = cosPalette(${this.color} + distort, brightness, contrast, oscilation, phase);
+  vec3 color = cosPalette(${hue} + distort, brightness, contrast, oscilation, phase);
 
   gl_FragColor = vec4(color, uAlpha);
 }

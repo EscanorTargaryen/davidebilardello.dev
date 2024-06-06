@@ -1,49 +1,113 @@
 <div class="p-[50px]">
-  <app-typography class="text-stroke" [fontText]="TextFont.QuicksandBold"
-                  [typeText]="TextType.h1">Hey, I am
-    <span class="text-primary"> Davide Bilardello
+    <app-typography cssClasses="text-primary" [fontText]="TextFont.QuicksandLight"
+                    [typeText]="TextType.h1">Hey, I am
+        <span class="text-primary"> <strong>Davide Bilardello </strong>
     </span>
-  </app-typography>
-  <app-typography cssClasses="text-primary mt-1" [fontText]="TextFont.QuicksandRegular"
-                  [typeText]="TextType.h5">(My nickname is EscanorTargaryen)
-  </app-typography>
-  <br>
-  <app-typography cssClasses="text-primary" [fontText]="TextFont.QuicksandRegular"
-                  [typeText]="TextType.h2">I’m a junior software engineer and front-end developer
-  </app-typography>
+    </app-typography>
+    <app-typography cssClasses="text-primary mt-1" [fontText]="TextFont.QuicksandRegular"
+                    [typeText]="TextType.h5">(My nickname is EscanorTargaryen)
+    </app-typography>
+    <br>
+    <app-typography cssClasses="text-primary" [fontText]="TextFont.QuicksandRegular"
+                    [typeText]="TextType.h2">I’m a junior software engineer and front-end developer
+    </app-typography>
 </div>
 <div class="mt-[250px]  flex justify-evenly items-center">
-  <div class="group transition duration-300 cursor-pointer">
-    <app-typography (click)="scrollToElement('projects-title')" cssClasses="text-white" [fontText]="TextFont.QuicksandRegular"
-                    [typeText]="TextType.h3">My Projects
-    </app-typography>
-    <span class="block mt-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 h-[2px] bg-white"></span>
-  </div>
-  <div class="group transition duration-300 cursor-pointer">
-    <app-typography cssClasses="text-white" [fontText]="TextFont.QuicksandRegular"
-                    [typeText]="TextType.h3">About me
-    </app-typography>
-    <span class="block mt-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 h-[2px] bg-white"></span>
-  </div>
+    <div class="group transition duration-300 cursor-pointer">
+        <app-typography (click)="scrollToElement('projects-title')" cssClasses="text-white"
+                        [fontText]="TextFont.QuicksandRegular"
+                        [typeText]="TextType.h3">My Projects
+        </app-typography>
+        <span class="block mt-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 h-[2px] bg-white"></span>
+    </div>
+    <div class="group transition duration-300 cursor-pointer">
+        <app-typography (click)="scrollToElement('aboutme')" cssClasses="text-white"
+                        [fontText]="TextFont.QuicksandRegular"
+                        [typeText]="TextType.h3">About me
+        </app-typography>
+        <span class="block mt-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 h-[2px] bg-white"></span>
+    </div>
 </div>
-<div class="flex flex-col items-end p-5 mt-80">
-  <div class="w-[50%]">
-    <app-typography cssClasses="text-secondary text-center mb-10 projects-title" [fontText]="TextFont.QuicksandBold"
-                    [typeText]="TextType.h2" id="projects-title">My Projects
-    </app-typography>
-    @defer {
-      <app-project title="UltimateAdvancementGenerator"
-                   description="UltimateAdvancementGenerator makes it possible to
+<div class="flex flex-col items-end p-5 mt-[600px]">
+    <div class="w-[50%]">
+        <app-typography cssClasses="text-secondary text-center mb-10 title" [fontText]="TextFont.QuicksandBold"
+                        [typeText]="TextType.h2" id="projects-title">My Projects
+        </app-typography>
+        @defer {
+            <div class="flex flex-col gap-20">
+                <app-project title="UltimateAdvancementGenerator"
+                             description="UltimateAdvancementGenerator makes it possible to
       graphically design minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Use this
       tool to create your own custom advancements!"
-                   [tags]="['Angular', 'Express.js']"
-                   img="imgs/generator.png" [imgW]="1916"
-                   [imgH]="1079"
-                   website="https://generator.devheim.space/"
-      ></app-project>
-    }
-  </div>
+                             [tags]="['Angular', 'Express.js']"
+                             img="imgs/generator.png" [imgW]="1916"
+                             [imgH]="1079"
+                             website="https://generator.devheim.space/"
+                ></app-project>
+                <app-project title="UltimateAdvancementGenerator"
+                             description="UltimateAdvancementGenerator makes it possible to
+      graphically design minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Use this
+      tool to create your own custom advancements!"
+                             [tags]="['Angular', 'Express.js']"
+                             img="imgs/generator.png" [imgW]="1916"
+                             [imgH]="1079"
+                             website="https://generator.devheim.space/"
+                ></app-project>
+                <app-project title="UltimateAdvancementGenerator"
+                             description="UltimateAdvancementGenerator makes it possible to
+      graphically design minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Use this
+      tool to create your own custom advancements!"
+                             [tags]="['Angular', 'Express.js']"
+                             img="imgs/generator.png" [imgW]="1916"
+                             [imgH]="1079"
+                             website="https://generator.devheim.space/"
+                ></app-project>
+                <app-project title="UltimateAdvancementGenerator"
+                             description="UltimateAdvancementGenerator makes it possible to
+      graphically design minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Use this
+      tool to create your own custom advancements!"
+                             [tags]="['Angular', 'Express.js']"
+                             img="imgs/generator.png" [imgW]="1916"
+                             [imgH]="1079"
+                             website="https://generator.devheim.space/"
+                ></app-project>
+            </div>
+        }
+    </div>
 </div>
-<div class="flex flex-col items-end  mt-96 p-20">
+<div class="mt-96 flex flex-col items-start p-5">
+    <div class="w-[50%]">
+        <app-typography id="aboutme" cssClasses="text-third text-center mb-10 aboutme "
+                        [fontText]="TextFont.QuicksandBold"
+                        [typeText]="TextType.h2">About me
+        </app-typography>
+        <app-typography cssClasses="text-white text-center mb-10 projects-title px-20"
+                        [fontText]="TextFont.QuicksandBold"
+                        [typeText]="TextType.p">
+            Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the
+            rabbit
+            hole of coding and web development.<br> Fast-forward to today, and I’ve had the privilege of building
+            software for an
+            advertising agency, a start-up, a huge corporation, and a digital product studio.
+            My main focus these days is building <br>accessible user interfaces for our customers at Klaviyo. I most
+            enjoy
+            building software in the sweet spot where design and engineering meet — things that look good but are also
+            built
+            well under the hood. In my free time, <br>I've also released an online video course that covers everything
+            you need to
+            know to build a web app with the Spotify API.
+            When I’m not at the computer, I’m usually rock climbing, reading, hanging out with my wife and two cats, or
+            running around Hyrule searching for Korok seeds
+        </app-typography>
+    </div>
 </div>
+@if (window && window.scrollY > window.innerHeight) {
+    <app-typography (click)="scrollToTop()" class="fixed bottom-10 left-10 z-50 cursor-pointer hover:opacity-40"
+                    cssClasses="text-white"
+                    [fontText]="TextFont.QuicksandRegular"
+                    [typeText]="TextType.p">Back to top
+    </app-typography>
+}
+
+
 

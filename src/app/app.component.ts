@@ -44,34 +44,29 @@ export class AppComponent {
           }).to(this.canva.canva.scene.position, {
             x: -1.5
           })
+          gsap.timeline({
 
-          setTimeout(() => { // DOM is not ready yet
+            scrollTrigger: {
+              refreshPriority: 10,
 
-            gsap.timeline({
+              onEnter: () => {
+                this.canva.setColor(CanvaService.thirdColor)
+                this.canva.setSpeed(0.01)
+                this.canva.setDensity(3.5)
+              },
 
-              scrollTrigger: {
-                refreshPriority: 10,
-
-                onEnter: () => {
-                  this.canva.setColor(CanvaService.thirdColor)
-                  this.canva.setSpeed(0.01)
-                  this.canva.setDensity(3.5)
-                },
-
-                onLeaveBack: () => {
-                  this.canva.setColor(CanvaService.secondColor)
-                  this.canva.setSpeed(0.01)
-                  this.canva.setDensity(6)
-                },
-                trigger: ".aboutme",
-                scrub: true,
-                end: "+=600"
-              }
-            }).to(this.canva.canva.scene.position, {
-              x: 1.5
-            })
-
-          }, 1000)
+              onLeaveBack: () => {
+                this.canva.setColor(CanvaService.secondColor)
+                this.canva.setSpeed(0.01)
+                this.canva.setDensity(6)
+              },
+              trigger: ".aboutme",
+              scrub: true,
+              end: "+=600"
+            }
+          }).to(this.canva.canva.scene.position, {
+            x: 1.5
+          })
 
           let rot = gsap.timeline().to(this.canva.canva.scene.rotation, {
             y: 2,

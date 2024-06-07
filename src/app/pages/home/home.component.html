@@ -33,46 +33,54 @@
     <app-typography cssClasses="text-secondary text-center mb-10 title" [fontText]="TextFont.QuicksandBold"
                     [typeText]="TextType.h2" id="projects-title">My Projects
     </app-typography>
-    @defer {
-      <div class="flex flex-col gap-20">
-        <app-project title="UltimateAdvancementGenerator"
-                     description="UltimateAdvancementGenerator makes it possible to
-      graphically design minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Use this
-      tool to create your own custom advancements!"
-                     [tags]="['Angular', 'Express.js']"
-                     img="imgs/generator.png" [imgW]="1916"
-                     [imgH]="1079"
-                     website="https://generator.devheim.space/"
-        ></app-project>
-        <app-project title="UltimateAdvancementGenerator"
-                     description="UltimateAdvancementGenerator makes it possible to
-      graphically design minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Use this
-      tool to create your own custom advancements!"
-                     [tags]="['Angular', 'Express.js']"
-                     img="imgs/generator.png" [imgW]="1916"
-                     [imgH]="1079"
-                     website="https://generator.devheim.space/"
-        ></app-project>
-        <app-project title="UltimateAdvancementGenerator"
-                     description="UltimateAdvancementGenerator makes it possible to
-      graphically design minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Use this
-      tool to create your own custom advancements!"
-                     [tags]="['Angular', 'Express.js']"
-                     img="imgs/generator.png" [imgW]="1916"
-                     [imgH]="1079"
-                     website="https://generator.devheim.space/"
-        ></app-project>
-        <app-project title="UltimateAdvancementGenerator"
-                     description="UltimateAdvancementGenerator makes it possible to
-      graphically design minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Use this
-      tool to create your own custom advancements!"
-                     [tags]="['Angular', 'Express.js']"
-                     img="imgs/generator.png" [imgW]="1916"
-                     [imgH]="1079"
-                     website="https://generator.devheim.space/"
-        ></app-project>
-      </div>
-    }
+    <div class="flex flex-col gap-20">
+      <app-project title="UltimateAdvancementGenerator - Web APP"
+                   description="UltimateAdvancementGenerator is a tool to design
+      graphically Minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Developed as my Bachelor's thesis."
+                   [tags]="['Angular', 'Express.js','Google API']"
+                   img="imgs/generator.png" [imgW]="1916"
+                   [imgH]="1079"
+                   document="docs/Bilardello - Thesis (ITA).pdf"
+                   website="https://generator.devheim.space/"
+      ></app-project>
+      <app-project title="DevHeim - Website"
+                   description="DevHeim is a Minecraft plugin community. Plugins and libraries for
+a unique Minecraft experience."
+                   [tags]="['Angular', 'TailwindCSS']"
+                   img="imgs/devheim.png" [imgW]="1915"
+                   [imgH]="851"
+                   website="https://devheim.space/"
+      ></app-project>
+      <app-project title="JEIOM23 - Website"
+                   description="Website for Junior Enterprise Italy October Meeting."
+                   [tags]="['Next.js']"
+                   img="imgs/jeiom.png" [imgW]="1898"
+                   [imgH]="886"
+                   website="https://www.jeiom23.it/"
+      ></app-project>
+      <app-project title="Davide Bilardello - Website"
+                   description="Personal website of Davide Bilardello."
+                   [tags]="['Angular', 'GSAP']"
+                   img="imgs/bilardello.png" [imgW]="1916"
+                   [imgH]="1079"
+                   website="https://escanortargaryen.dev/"
+                   github="https://github.com/EscanorTargaryen/davidebilardello.dev"
+      ></app-project>
+      <app-project title="UltimateAdvancementAPI - Java Library"
+                   description="A powerful API to create custom advancements for your Minecraft server."
+                   [tags]="['Java', 'Maven']"
+                   img="imgs/API.png" [imgW]="1366"
+                   [imgH]="634"
+                   website="https://devheim.space/UltimateAdvancementAPI"
+                   github="https://github.com/frengor/UltimateAdvancementAPI"
+      ></app-project>
+      <app-project title="JEMORE INTERNAL USE SOFTWARE - App"
+                   description=""
+                   [tags]="['Flutter', 'MySQL']"
+                   img="imgs/flutter.png" [imgW]="1906"
+                   [imgH]="895"
+      ></app-project>
+    </div>
   </div>
 </div>
 <div class="mt-96 flex flex-col items-start p-5 mb-40">
@@ -81,29 +89,30 @@
                     [fontText]="TextFont.QuicksandBold"
                     [typeText]="TextType.h2">About me
     </app-typography>
-    <app-typography cssClasses="text-white text-center mb-10 projects-title "
-                    [fontText]="TextFont.QuicksandBold"
+    <app-typography cssClasses="text-white mb-10 projects-title "
+                    [fontText]="TextFont.QuicksandRegular"
                     [typeText]="TextType.p">
-      Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the
-      rabbit
-      hole of coding and web development.<br> Fast-forward to today, and I’ve had the privilege of building
-      software for an
-      advertising agency, a start-up, a huge corporation, and a digital product studio.
-      My main focus these days is building <br>accessible user interfaces for our customers at Klaviyo. I most
-      enjoy
-      building software in the sweet spot where design and engineering meet — things that look good but are also
-      built
-      well under the hood. In my free time, <br>I've also released an online video course that covers everything
-      you need to
-      know to build a web app with the Spotify API.
-      When I’m not at the computer, I’m usually rock climbing, reading, hanging out with my wife and two cats, or
-      running around Hyrule searching for Korok seeds
+      Nice to meet you, my name is Davide! <br>
+      I really enjoy creating websites/web apps
+      and taking care of them in every detail, from UI/UX to accessibility to SEO!<br><br>
+      I attend the <strong>Artificial Intelligence Engineering</strong> course at <a class="underline"
+                                                                                     href="https://www.unimore.it/"
+                                                                                     target="_blank">University of
+      Modena and Reggio Emilia</a> where I also graduated with a Bachelor's degree
+      in Computer Engineering.<br> I have a background in engineering such as mathematics and physics, but also in
+      computer
+      science, with knowledge of object-oriented programming, networks and software engineering.<br><br>
+      I currently work occasionally as a <strong>web developer</strong>.<br> The experience that matured me the most was
+      at <a class="underline" href="https://www.jemore.it/" target="_blank">JEMORE</a> where I
+      also held the position of IT manager and applied everything I studied at university.<br>
+      Instead, for passion I contribute and develop software for the Minecraft server, and I am one of the founders of
+      DevHeim.
     </app-typography>
     <div class="h-[2px] bg-third">
     </div>
     <div class="mt-5 flex flex-row gap-4 items-center text-third">
       <a class="bg-thirdDark rounded-full w-fit border border-bg hover:border-third cursor-pointer"
-         href="Davide Bilardello - CV.pdf" target="_blank">
+         href="docs/Davide Bilardello - CV.pdf" target="_blank">
         <app-typography cssClasses="text-third py-2 px-3" [fontText]="TextFont.QuicksandMedium"
                         [typeText]="TextType.p">My resume
         </app-typography>

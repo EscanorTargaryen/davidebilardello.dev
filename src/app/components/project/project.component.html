@@ -3,6 +3,10 @@
     <img class="w-[150px] h-fit border border-secondaryDark rounded" ngSrc="{{img}}" width="{{imgW}}"
          height="{{imgH}}"
          alt="">
+  } @placeholder {
+    <div class="w-[150px] h-[60px]"></div>
+  } @loading {
+    <div class="w-[150px] h-[60px]"></div>
   }
   <div class="flex flex-col gap-2 flex-grow">
     <app-typography cssClasses="text-white break-all" [fontText]="TextFont.QuicksandBold"
